@@ -8,6 +8,9 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+import com.screen.practice.Practice;
+import com.screen.test.Test;
+
 public class Start {
 	public static JPanel panel = new JPanel();
 	private static JLabel typing = new JLabel("Typing");
@@ -41,12 +44,16 @@ public class Start {
 		
 		practiceBtn.addActionListener(e -> {
 			panel.setVisible(false);
+			Practice.panel.setVisible(true);
 		});
 		testBtn.addActionListener(e -> {
 			panel.setVisible(false);
+			Test.panel.setVisible(true);
 		});
 		historyBtn.addActionListener(e -> {
 			panel.setVisible(false);
+			History.menubar.setVisible(true);
+			History.panel.setVisible(true);
 		});
 		settingBtn.addActionListener(e -> {
 			panel.setVisible(false);
